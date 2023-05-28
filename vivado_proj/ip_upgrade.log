@@ -1,0 +1,37 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (win64) Build 2729669 Thu Dec  5 04:49:17 MST 2019
+| Date         : Thu May  4 14:07:46 2023
+| Host         : ENGR-G8DPDF3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ddr'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ddr (xilinx.com:ip:mig_7series:4.2 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (win64) Build 2729669 Thu Dec  5 04:49:17 MST 2019
+| Date         : Thu May  4 14:07:04 2023
+| Host         : ENGR-G8DPDF3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+--------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ClkGen'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ClkGen (xilinx.com:ip:clk_wiz:6.0 (Rev. 4)) to Vivado generation flows.
+

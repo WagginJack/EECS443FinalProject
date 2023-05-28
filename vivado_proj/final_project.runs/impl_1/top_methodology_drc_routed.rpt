@@ -1,0 +1,376 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2.1 (win64) Build 2729669 Thu Dec  5 04:49:17 MST 2019
+| Date         : Thu May  4 20:13:34 2023
+| Host         : ENGR-6W5DS33 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+| Design       : top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 67
++-----------+------------------+-------------------------------------------------+------------+
+| Rule      | Severity         | Description                                     | Violations |
++-----------+------------------+-------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks  | 36         |
+| LUTAR-1   | Warning          | LUT drives async reset alert                    | 1          |
+| PDRC-190  | Warning          | Suboptimally placed synchronized register chain | 12         |
+| TIMING-10 | Warning          | Missing property on synchronizer                | 1          |
+| XDCB-5    | Warning          | Runtime inefficient way to find pin objects     | 1          |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF               | 16         |
++-----------+------------------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_200MHz_o_ClkGen and clk_200MHz_o_ClkGen_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_200MHz_o_ClkGen] -to [get_clocks clk_200MHz_o_ClkGen_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_200MHz_o_ClkGen_1 and clk_200MHz_o_ClkGen are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_200MHz_o_ClkGen_1] -to [get_clocks clk_200MHz_o_ClkGen]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and clk_pll_i_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks clk_pll_i_1]
+Related violations: <none>
+
+TIMING-6#4 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and iserdes_clk_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks iserdes_clk_2]
+Related violations: <none>
+
+TIMING-6#5 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and iserdes_clk_3 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks iserdes_clk_3]
+Related violations: <none>
+
+TIMING-6#6 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i_1 and clk_pll_i are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i_1] -to [get_clocks clk_pll_i]
+Related violations: <none>
+
+TIMING-6#7 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i_1 and iserdes_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i_1] -to [get_clocks iserdes_clk]
+Related violations: <none>
+
+TIMING-6#8 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i_1 and iserdes_clk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i_1] -to [get_clocks iserdes_clk_1]
+Related violations: <none>
+
+TIMING-6#9 Critical Warning
+No common primary clock between related clocks  
+The clocks iserdes_clkdiv and iserdes_clkdiv_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks iserdes_clkdiv] -to [get_clocks iserdes_clkdiv_2]
+Related violations: <none>
+
+TIMING-6#10 Critical Warning
+No common primary clock between related clocks  
+The clocks iserdes_clkdiv_1 and iserdes_clkdiv_3 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks iserdes_clkdiv_1] -to [get_clocks iserdes_clkdiv_3]
+Related violations: <none>
+
+TIMING-6#11 Critical Warning
+No common primary clock between related clocks  
+The clocks iserdes_clkdiv_2 and iserdes_clkdiv are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks iserdes_clkdiv_2] -to [get_clocks iserdes_clkdiv]
+Related violations: <none>
+
+TIMING-6#12 Critical Warning
+No common primary clock between related clocks  
+The clocks iserdes_clkdiv_3 and iserdes_clkdiv_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks iserdes_clkdiv_3] -to [get_clocks iserdes_clkdiv_1]
+Related violations: <none>
+
+TIMING-6#13 Critical Warning
+No common primary clock between related clocks  
+The clocks mem_refclk and mem_refclk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks mem_refclk] -to [get_clocks mem_refclk_1]
+Related violations: <none>
+
+TIMING-6#14 Critical Warning
+No common primary clock between related clocks  
+The clocks mem_refclk_1 and mem_refclk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks mem_refclk_1] -to [get_clocks mem_refclk]
+Related violations: <none>
+
+TIMING-6#15 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk and oserdes_clk_4 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk] -to [get_clocks oserdes_clk_4]
+Related violations: <none>
+
+TIMING-6#16 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk and oserdes_clkdiv_4 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk] -to [get_clocks oserdes_clkdiv_4]
+Related violations: <none>
+
+TIMING-6#17 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_1 and oserdes_clkdiv_5 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_1] -to [get_clocks oserdes_clkdiv_5]
+Related violations: <none>
+
+TIMING-6#18 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_2 and oserdes_clk_6 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_2] -to [get_clocks oserdes_clk_6]
+Related violations: <none>
+
+TIMING-6#19 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_2 and oserdes_clkdiv_6 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_2] -to [get_clocks oserdes_clkdiv_6]
+Related violations: <none>
+
+TIMING-6#20 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_3 and oserdes_clkdiv_7 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_3] -to [get_clocks oserdes_clkdiv_7]
+Related violations: <none>
+
+TIMING-6#21 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_4 and oserdes_clk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_4] -to [get_clocks oserdes_clk]
+Related violations: <none>
+
+TIMING-6#22 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_4 and oserdes_clkdiv are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_4] -to [get_clocks oserdes_clkdiv]
+Related violations: <none>
+
+TIMING-6#23 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_5 and oserdes_clkdiv_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_5] -to [get_clocks oserdes_clkdiv_1]
+Related violations: <none>
+
+TIMING-6#24 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_6 and oserdes_clk_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_6] -to [get_clocks oserdes_clk_2]
+Related violations: <none>
+
+TIMING-6#25 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_6 and oserdes_clkdiv_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_6] -to [get_clocks oserdes_clkdiv_2]
+Related violations: <none>
+
+TIMING-6#26 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clk_7 and oserdes_clkdiv_3 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clk_7] -to [get_clocks oserdes_clkdiv_3]
+Related violations: <none>
+
+TIMING-6#27 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv and oserdes_clkdiv_4 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv] -to [get_clocks oserdes_clkdiv_4]
+Related violations: <none>
+
+TIMING-6#28 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_1 and oserdes_clkdiv_5 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_1] -to [get_clocks oserdes_clkdiv_5]
+Related violations: <none>
+
+TIMING-6#29 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_2 and oserdes_clkdiv_6 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_2] -to [get_clocks oserdes_clkdiv_6]
+Related violations: <none>
+
+TIMING-6#30 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_3 and oserdes_clkdiv_7 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_3] -to [get_clocks oserdes_clkdiv_7]
+Related violations: <none>
+
+TIMING-6#31 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_4 and oserdes_clkdiv are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_4] -to [get_clocks oserdes_clkdiv]
+Related violations: <none>
+
+TIMING-6#32 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_5 and oserdes_clkdiv_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_5] -to [get_clocks oserdes_clkdiv_1]
+Related violations: <none>
+
+TIMING-6#33 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_6 and oserdes_clkdiv_2 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_6] -to [get_clocks oserdes_clkdiv_2]
+Related violations: <none>
+
+TIMING-6#34 Critical Warning
+No common primary clock between related clocks  
+The clocks oserdes_clkdiv_7 and oserdes_clkdiv_3 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks oserdes_clkdiv_7] -to [get_clocks oserdes_clkdiv_3]
+Related violations: <none>
+
+TIMING-6#35 Critical Warning
+No common primary clock between related clocks  
+The clocks sync_pulse and mem_refclk_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sync_pulse] -to [get_clocks mem_refclk_1]
+Related violations: <none>
+
+TIMING-6#36 Critical Warning
+No common primary clock between related clocks  
+The clocks sync_pulse_1 and mem_refclk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks sync_pulse_1] -to [get_clocks mem_refclk]
+Related violations: <none>
+
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r1_reg/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[0]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[10]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[11]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[1]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[2]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[3]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[4]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[5]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[6]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[7]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[8]/PRE, Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_ddr2_infrastructure/rstdiv0_sync_r_reg[9]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X55Y64 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X54Y67 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X58Y64 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X57Y63 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X56Y66 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X57Y65 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X54Y65 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X55Y66 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X52Y65 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X55Y62 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X57Y67 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X56Y63 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell Inst_Audio/DDR/Inst_DDR/u_ddr_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '6' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: c:/Users/r673h066/Downloads/final_project_443/final_project_443/vivado_proj/final_project.srcs/sources_1/ip/ddr/ddr/user_design/constraints/ddr.xdc (Line: 344)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[9].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[0].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+Inst_Audio/DDR/Inst_DDR/u_ddr_mig/u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

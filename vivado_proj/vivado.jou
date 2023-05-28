@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Thu May  4 19:53:55 2023
+# Process ID: 17344
+# Current directory: C:/Users/r673h066/Downloads/final_project_443/final_project_443/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9676 C:\Users\r673h066\Downloads\final_project_443\final_project_443\vivado_proj\final_project.xpr
+# Log file: C:/Users/r673h066/Downloads/final_project_443/final_project_443/vivado_proj/vivado.log
+# Journal file: C:/Users/r673h066/Downloads/final_project_443/final_project_443/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/r673h066/Downloads/final_project_443/final_project_443/vivado_proj/final_project.xpr
+update_compile_order -fileset sources_1
+generate_target all [get_files C:/Users/r673h066/Downloads/final_project_443/final_project_443/vivado_proj/final_project.srcs/sources_1/ip/ddr/ddr.xci]
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

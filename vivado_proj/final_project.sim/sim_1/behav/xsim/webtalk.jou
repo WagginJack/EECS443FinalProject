@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2.1 (64-bit)
+# SW Build 2729669 on Thu Dec  5 04:49:17 MST 2019
+# IP Build 2729494 on Thu Dec  5 07:38:25 MST 2019
+# Start of session at: Thu May  4 17:33:32 2023
+# Process ID: 2160
+# Current directory: C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.sim/sim_1/behav/xsim/xsim.dir/top_behav/webtalk/xsim_webtalk.tcl -notrace

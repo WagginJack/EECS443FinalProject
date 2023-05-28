@@ -1,0 +1,20 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/ip/ddr/ddr/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mig_7series_v4_2_ddr_phy_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ddr_mig_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ddr_mig'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/ip/ddr/ddr/user_design/rtl/ddr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ddr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/imports/hdl/AudioDemo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AudioDemo'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/imports/hdl/Dbncr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Dbncr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/imports/hdl/PdmDes.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PdmDes'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/imports/hdl/PdmSer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PdmSer'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/imports/hdl/Ram2Ddr.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Ram2Ddr'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/imports/hdl/RamCntrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RamCntrl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/p962w792/Downloads/final_project_443/vivado_proj/final_project.srcs/sources_1/imports/hdl/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top'
